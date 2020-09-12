@@ -16,7 +16,7 @@
 			<aside class="left">
 				<nav>
 					<a href="index.php" class = "active"><i class="fas fa-home"></i>Home</a>
-					<a href="Form.php"><i class="fa fa-wpforms" aria-hidden="true"></i>Form</a>
+					<a href="form.php"><i class="fa fa-wpforms" aria-hidden="true"></i>Form</a>
 					<a href="login.php"><i class="fas fa-user"></i>Login/Register</a>
 					<a href="stripe.php"><i class="fab fa-stripe-s"></i>Stripe</a>
 				</nav>

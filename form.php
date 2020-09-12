@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title> Form </title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://kit.fontawesome.com/b37c806e3b.js" crossorigin="anonymous"></script>
 		<style>
 		.container {
 		float: right;
 		}
 		form{
 		background-color: lightgray;
-		margin: 20vh auto;
-		padding: 50px;
-		border-radius: 5px;
+		margin: 5vh 20vw;
+		padding: 40px;
+		border-radius: 10px;
 		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+		width: 30vw;
 		}
 		form:hover{
 		box-shadow: 0 3px 3px 3px rgba(0,0,0,0.2);
@@ -25,12 +26,47 @@
 		color: red;
 		content: " *";
 		}
+		.form-group{
+			padding: 10px;
+			margin: 10px -10px;
+		}
+		.form-control {
+			display:block;
+			margin-top: 10px;
+			padding: 10px;
+			outline: none;
+			border:none;
+			width: 100%;
+			border-radius: 5px;
+			font-size: 16px;
+			color: gray;
+		}
+		.btn {
+			border-radius: 10px;
+			width: 10vw;
+			height: 5vh;
+			border-color: #ccc;
+			font-size: 17px;
+			margin-top: 10px;
+		}
 		</style>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
+		<header>
+			<h1>JustlnClicks</h1>
+			<a href="#"><i class="fas fa-search">Search</i></a>
+		</header>
+		<main>
+			<aside class="left">
+				<nav>
+					<a href="index.php"><i class="fas fa-home"></i>Home</a>
+					<a href="form.php" class="active"><i class="fa fa-wpforms" aria-hidden="true"></i>Form</a>
+					<a href="login.php"><i class="fas fa-user"></i>Login/Register</a>
+					<a href="stripe.php"><i class="fab fa-stripe-s"></i>Stripe</a>
+				</nav>
+			</aside>
+			<section class="right">
+				<div class="container">
 					<form action="connect.php" method="post">
 						<div class="form-group">
 							<label for="name">Full Name:</label>
@@ -46,23 +82,17 @@
 						</div>
 						<div class="form-group">
 							<label for="plans">Plans:</label><br>
-							<select name="plans" required>
+							<select class="form-control" name="plans" required>
 								<option value="">None</option>
 								<option value="">Standard -- 2000 for Monthly</option>
 								<option value="">Advanced -- 4000 for 4 months</option>
 								<option value="">Pro -- 6000 for 6 Months</option>
 							</select>
 						</div>
-						<button class="btn btn-info" name="submit">Submit</button>
+						<button class="btn" name="submit">Submit</button>
 					</form>
 				</div>
-			</div>
-		</div>
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<!-- Popper JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<!-- Latest compiled JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			</section>
+		</main>
 	</body>
 </html>
