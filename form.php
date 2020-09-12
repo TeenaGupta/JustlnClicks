@@ -4,9 +4,28 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title> Form </title>
-		<link rel="stylesheet" type="text/css" href="css/style1.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<style>
+		.container {
+		float: right;
+		}
+		form{
+		background-color: lightgray;
+		margin: 20vh auto;
+		padding: 50px;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+		}
+		form:hover{
+		box-shadow: 0 3px 3px 3px rgba(0,0,0,0.2);
+		transition: 0.3s;
+		}
+		form label:after {
+		color: red;
+		content: " *";
+		}
+		</style>
 	</head>
 	<body>
 		<div class="container">
